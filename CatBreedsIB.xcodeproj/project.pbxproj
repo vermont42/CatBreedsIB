@@ -1,0 +1,451 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E10884472032571B00AEBB1C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10884462032571B00AEBB1C /* AppDelegate.swift */; };
+		E10884492032571B00AEBB1C /* BreedBrowseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10884482032571B00AEBB1C /* BreedBrowseVC.swift */; };
+		E108844E2032571C00AEBB1C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E108844D2032571C00AEBB1C /* Assets.xcassets */; };
+		E108845920325A4600AEBB1C /* Breed.swift in Sources */ = {isa = PBXBuildFile; fileRef = E108845820325A4600AEBB1C /* Breed.swift */; };
+		E108845B20325A6600AEBB1C /* Breeds.swift in Sources */ = {isa = PBXBuildFile; fileRef = E108845A20325A6600AEBB1C /* Breeds.swift */; };
+		E108845E2038DDD800AEBB1C /* Tonkinese.swift in Sources */ = {isa = PBXBuildFile; fileRef = E108845D2038DDD800AEBB1C /* Tonkinese.swift */; };
+		E10884602038DEFB00AEBB1C /* Abyssinian.swift in Sources */ = {isa = PBXBuildFile; fileRef = E108845F2038DEFB00AEBB1C /* Abyssinian.swift */; };
+		E10884622038DF0E00AEBB1C /* Bengal.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10884612038DF0E00AEBB1C /* Bengal.swift */; };
+		E10884642038DF1F00AEBB1C /* MaineCoon.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10884632038DF1F00AEBB1C /* MaineCoon.swift */; };
+		E10884682038DF4000AEBB1C /* RussianBlue.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10884672038DF4000AEBB1C /* RussianBlue.swift */; };
+		E108846A2038DF5400AEBB1C /* Savannah.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10884692038DF5400AEBB1C /* Savannah.swift */; };
+		E108846C2038DF6600AEBB1C /* Siamese.swift in Sources */ = {isa = PBXBuildFile; fileRef = E108846B2038DF6600AEBB1C /* Siamese.swift */; };
+		E108846E2038DF7E00AEBB1C /* TurkishAngora.swift in Sources */ = {isa = PBXBuildFile; fileRef = E108846D2038DF7E00AEBB1C /* TurkishAngora.swift */; };
+		E10884702038DF8600AEBB1C /* Van.swift in Sources */ = {isa = PBXBuildFile; fileRef = E108846F2038DF8600AEBB1C /* Van.swift */; };
+		E10884742038E61000AEBB1C /* BreedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10884732038E61000AEBB1C /* BreedCell.swift */; };
+		E10884762038EF6000AEBB1C /* Burmese.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10884752038EF6000AEBB1C /* Burmese.swift */; };
+		E10884782038EF9800AEBB1C /* DevonRex.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10884772038EF9800AEBB1C /* DevonRex.swift */; };
+		E108847A2038F0B200AEBB1C /* BreedDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10884792038F0B200AEBB1C /* BreedDetailVC.swift */; };
+		E13D3E922041D41F00A2BDFC /* Credits.swift in Sources */ = {isa = PBXBuildFile; fileRef = E13D3E912041D41F00A2BDFC /* Credits.swift */; };
+		E13D3E942041D49B00A2BDFC /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E13D3E932041D49B00A2BDFC /* StringExtensions.swift */; };
+		E13D3E962041D4DA00A2BDFC /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = E13D3E952041D4DA00A2BDFC /* Colors.swift */; };
+		E13D3E982041D57F00A2BDFC /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = E13D3E972041D57F00A2BDFC /* Fonts.swift */; };
+		E13D3E9A204C779E00A2BDFC /* meow2.m4a in Resources */ = {isa = PBXBuildFile; fileRef = E13D3E99204C779E00A2BDFC /* meow2.m4a */; };
+		E181A993203A2B1600F14842 /* CreditsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E181A992203A2B1600F14842 /* CreditsVC.swift */; };
+		E181A996203A30BD00F14842 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E181A994203A30BD00F14842 /* LaunchScreen.storyboard */; };
+		E181A997203A30BD00F14842 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E181A995203A30BD00F14842 /* Main.storyboard */; };
+		E181A99D203B713C00F14842 /* meow1.m4a in Resources */ = {isa = PBXBuildFile; fileRef = E181A99B203B713C00F14842 /* meow1.m4a */; };
+		E181A9A0203B717200F14842 /* Sound.swift in Sources */ = {isa = PBXBuildFile; fileRef = E181A99E203B717200F14842 /* Sound.swift */; };
+		E181A9A1203B717200F14842 /* SoundManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E181A99F203B717200F14842 /* SoundManager.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		E10884432032571B00AEBB1C /* CatBreedsIB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CatBreedsIB.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E10884462032571B00AEBB1C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E10884482032571B00AEBB1C /* BreedBrowseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedBrowseVC.swift; sourceTree = "<group>"; };
+		E108844D2032571C00AEBB1C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E108845820325A4600AEBB1C /* Breed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Breed.swift; sourceTree = "<group>"; };
+		E108845A20325A6600AEBB1C /* Breeds.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Breeds.swift; sourceTree = "<group>"; };
+		E108845D2038DDD800AEBB1C /* Tonkinese.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tonkinese.swift; sourceTree = "<group>"; };
+		E108845F2038DEFB00AEBB1C /* Abyssinian.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Abyssinian.swift; sourceTree = "<group>"; };
+		E10884612038DF0E00AEBB1C /* Bengal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bengal.swift; sourceTree = "<group>"; };
+		E10884632038DF1F00AEBB1C /* MaineCoon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaineCoon.swift; sourceTree = "<group>"; };
+		E10884672038DF4000AEBB1C /* RussianBlue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RussianBlue.swift; sourceTree = "<group>"; };
+		E10884692038DF5400AEBB1C /* Savannah.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Savannah.swift; sourceTree = "<group>"; };
+		E108846B2038DF6600AEBB1C /* Siamese.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Siamese.swift; sourceTree = "<group>"; };
+		E108846D2038DF7E00AEBB1C /* TurkishAngora.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TurkishAngora.swift; sourceTree = "<group>"; };
+		E108846F2038DF8600AEBB1C /* Van.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Van.swift; sourceTree = "<group>"; };
+		E10884732038E61000AEBB1C /* BreedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedCell.swift; sourceTree = "<group>"; };
+		E10884752038EF6000AEBB1C /* Burmese.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Burmese.swift; sourceTree = "<group>"; };
+		E10884772038EF9800AEBB1C /* DevonRex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevonRex.swift; sourceTree = "<group>"; };
+		E10884792038F0B200AEBB1C /* BreedDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedDetailVC.swift; sourceTree = "<group>"; };
+		E118EE71203B745600B01C10 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = CatBreedsIB/Info.plist; sourceTree = SOURCE_ROOT; };
+		E13D3E912041D41F00A2BDFC /* Credits.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Credits.swift; sourceTree = "<group>"; };
+		E13D3E932041D49B00A2BDFC /* StringExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
+		E13D3E952041D4DA00A2BDFC /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		E13D3E972041D57F00A2BDFC /* Fonts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
+		E13D3E99204C779E00A2BDFC /* meow2.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = meow2.m4a; sourceTree = "<group>"; };
+		E181A992203A2B1600F14842 /* CreditsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditsVC.swift; sourceTree = "<group>"; };
+		E181A994203A30BD00F14842 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E181A995203A30BD00F14842 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		E181A99B203B713C00F14842 /* meow1.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = meow1.m4a; sourceTree = "<group>"; };
+		E181A99E203B717200F14842 /* Sound.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sound.swift; sourceTree = "<group>"; };
+		E181A99F203B717200F14842 /* SoundManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SoundManager.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E10884402032571B00AEBB1C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E108843A2032571A00AEBB1C = {
+			isa = PBXGroup;
+			children = (
+				E10884452032571B00AEBB1C /* CatBreedsIB */,
+				E10884442032571B00AEBB1C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E10884442032571B00AEBB1C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E10884432032571B00AEBB1C /* CatBreedsIB.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E10884452032571B00AEBB1C /* CatBreedsIB */ = {
+			isa = PBXGroup;
+			children = (
+				E181A999203B70CC00F14842 /* Assets */,
+				E10884712038E35F00AEBB1C /* Controllers */,
+				E181A998203B706600F14842 /* Misc */,
+				E108845C2038DD7E00AEBB1C /* Models */,
+				E10884722038E5E100AEBB1C /* Views */,
+			);
+			path = CatBreedsIB;
+			sourceTree = "<group>";
+		};
+		E108845C2038DD7E00AEBB1C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E13D3E902041D3D900A2BDFC /* Breeds */,
+				E108845820325A4600AEBB1C /* Breed.swift */,
+				E108845A20325A6600AEBB1C /* Breeds.swift */,
+				E13D3E952041D4DA00A2BDFC /* Colors.swift */,
+				E13D3E912041D41F00A2BDFC /* Credits.swift */,
+				E13D3E972041D57F00A2BDFC /* Fonts.swift */,
+				E181A99E203B717200F14842 /* Sound.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		E10884712038E35F00AEBB1C /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				E10884482032571B00AEBB1C /* BreedBrowseVC.swift */,
+				E10884792038F0B200AEBB1C /* BreedDetailVC.swift */,
+				E181A992203A2B1600F14842 /* CreditsVC.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		E10884722038E5E100AEBB1C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E10884732038E61000AEBB1C /* BreedCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E13D3E902041D3D900A2BDFC /* Breeds */ = {
+			isa = PBXGroup;
+			children = (
+				E108845F2038DEFB00AEBB1C /* Abyssinian.swift */,
+				E10884612038DF0E00AEBB1C /* Bengal.swift */,
+				E10884752038EF6000AEBB1C /* Burmese.swift */,
+				E10884772038EF9800AEBB1C /* DevonRex.swift */,
+				E10884632038DF1F00AEBB1C /* MaineCoon.swift */,
+				E10884672038DF4000AEBB1C /* RussianBlue.swift */,
+				E10884692038DF5400AEBB1C /* Savannah.swift */,
+				E108846B2038DF6600AEBB1C /* Siamese.swift */,
+				E108845D2038DDD800AEBB1C /* Tonkinese.swift */,
+				E108846D2038DF7E00AEBB1C /* TurkishAngora.swift */,
+				E108846F2038DF8600AEBB1C /* Van.swift */,
+			);
+			path = Breeds;
+			sourceTree = "<group>";
+		};
+		E181A998203B706600F14842 /* Misc */ = {
+			isa = PBXGroup;
+			children = (
+				E10884462032571B00AEBB1C /* AppDelegate.swift */,
+				E118EE71203B745600B01C10 /* Info.plist */,
+				E181A994203A30BD00F14842 /* LaunchScreen.storyboard */,
+				E181A995203A30BD00F14842 /* Main.storyboard */,
+				E181A99F203B717200F14842 /* SoundManager.swift */,
+				E13D3E932041D49B00A2BDFC /* StringExtensions.swift */,
+			);
+			path = Misc;
+			sourceTree = "<group>";
+		};
+		E181A999203B70CC00F14842 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				E181A99B203B713C00F14842 /* meow1.m4a */,
+				E13D3E99204C779E00A2BDFC /* meow2.m4a */,
+				E108844D2032571C00AEBB1C /* Assets.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E10884422032571B00AEBB1C /* CatBreedsIB */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E10884552032571C00AEBB1C /* Build configuration list for PBXNativeTarget "CatBreedsIB" */;
+			buildPhases = (
+				E108843F2032571B00AEBB1C /* Sources */,
+				E10884402032571B00AEBB1C /* Frameworks */,
+				E10884412032571B00AEBB1C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CatBreedsIB;
+			productName = CatBreedsIB;
+			productReference = E10884432032571B00AEBB1C /* CatBreedsIB.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E108843B2032571A00AEBB1C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Josh Adams";
+				TargetAttributes = {
+					E10884422032571B00AEBB1C = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = E108843E2032571A00AEBB1C /* Build configuration list for PBXProject "CatBreedsIB" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = E108843A2032571A00AEBB1C;
+			productRefGroup = E10884442032571B00AEBB1C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E10884422032571B00AEBB1C /* CatBreedsIB */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E10884412032571B00AEBB1C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E181A997203A30BD00F14842 /* Main.storyboard in Resources */,
+				E108844E2032571C00AEBB1C /* Assets.xcassets in Resources */,
+				E13D3E9A204C779E00A2BDFC /* meow2.m4a in Resources */,
+				E181A99D203B713C00F14842 /* meow1.m4a in Resources */,
+				E181A996203A30BD00F14842 /* LaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E108843F2032571B00AEBB1C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E108845920325A4600AEBB1C /* Breed.swift in Sources */,
+				E10884762038EF6000AEBB1C /* Burmese.swift in Sources */,
+				E10884642038DF1F00AEBB1C /* MaineCoon.swift in Sources */,
+				E108846A2038DF5400AEBB1C /* Savannah.swift in Sources */,
+				E10884742038E61000AEBB1C /* BreedCell.swift in Sources */,
+				E108845E2038DDD800AEBB1C /* Tonkinese.swift in Sources */,
+				E13D3E942041D49B00A2BDFC /* StringExtensions.swift in Sources */,
+				E10884622038DF0E00AEBB1C /* Bengal.swift in Sources */,
+				E10884602038DEFB00AEBB1C /* Abyssinian.swift in Sources */,
+				E10884702038DF8600AEBB1C /* Van.swift in Sources */,
+				E181A9A1203B717200F14842 /* SoundManager.swift in Sources */,
+				E10884492032571B00AEBB1C /* BreedBrowseVC.swift in Sources */,
+				E10884682038DF4000AEBB1C /* RussianBlue.swift in Sources */,
+				E13D3E962041D4DA00A2BDFC /* Colors.swift in Sources */,
+				E108846C2038DF6600AEBB1C /* Siamese.swift in Sources */,
+				E181A993203A2B1600F14842 /* CreditsVC.swift in Sources */,
+				E13D3E982041D57F00A2BDFC /* Fonts.swift in Sources */,
+				E13D3E922041D41F00A2BDFC /* Credits.swift in Sources */,
+				E181A9A0203B717200F14842 /* Sound.swift in Sources */,
+				E108846E2038DF7E00AEBB1C /* TurkishAngora.swift in Sources */,
+				E108845B20325A6600AEBB1C /* Breeds.swift in Sources */,
+				E10884782038EF9800AEBB1C /* DevonRex.swift in Sources */,
+				E108847A2038F0B200AEBB1C /* BreedDetailVC.swift in Sources */,
+				E10884472032571B00AEBB1C /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		E10884532032571C00AEBB1C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E10884542032571C00AEBB1C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E10884562032571C00AEBB1C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V3L2PL4QC9;
+				INFOPLIST_FILE = CatBreedsIB/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = biz.joshadams.CatBreedsIB;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		E10884572032571C00AEBB1C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V3L2PL4QC9;
+				INFOPLIST_FILE = CatBreedsIB/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = biz.joshadams.CatBreedsIB;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E108843E2032571A00AEBB1C /* Build configuration list for PBXProject "CatBreedsIB" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E10884532032571C00AEBB1C /* Debug */,
+				E10884542032571C00AEBB1C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E10884552032571C00AEBB1C /* Build configuration list for PBXNativeTarget "CatBreedsIB" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E10884562032571C00AEBB1C /* Debug */,
+				E10884572032571C00AEBB1C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E108843B2032571A00AEBB1C /* Project object */;
+}
