@@ -15,7 +15,7 @@ class BreedDetailVC: UIViewController, UITextViewDelegate {
   @IBOutlet var photoHeightConstraint: NSLayoutConstraint!
   private let initialPhotoSize: CGFloat = 180.0
 
-  internal var breed: Breed!
+  private var breed: Breed!
 
   override func viewDidLoad() {
     super.viewDidLoad()
