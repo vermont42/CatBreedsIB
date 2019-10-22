@@ -20,13 +20,13 @@ public struct Colors {
     UITabBar.appearance().barTintColor = lightGray
     UITabBar.appearance().tintColor = blackish
     _ = [.normal, .selected].map {
-      UITabBarItem.appearance().setTitleTextAttributes([NSAttributedStringKey.font: Fonts.body], for: $0)
+      UITabBarItem.appearance().setTitleTextAttributes([NSAttributedString.Key.font: Fonts.body], for: $0)
     }
     UINavigationBar.appearance().tintColor = blackish
     UINavigationBar.appearance().barTintColor = lightGray
-    UINavigationBar.appearance().titleTextAttributes = [NSAttributedStringKey.foregroundColor: blackish, NSAttributedStringKey.font: Fonts.heading]
+    UINavigationBar.appearance().titleTextAttributes = [NSAttributedString.Key.foregroundColor: blackish, NSAttributedString.Key.font: Fonts.heading]
     _ = [.normal, .selected].map {
-      UIBarButtonItem.appearance().setTitleTextAttributes([NSAttributedStringKey.foregroundColor: blackish, NSAttributedStringKey.font: Fonts.subheading], for: $0)
+      UIBarButtonItem.appearance().setTitleTextAttributes([NSAttributedString.Key.foregroundColor: blackish, NSAttributedString.Key.font: Fonts.subheading], for: $0)
     }
   }
 }

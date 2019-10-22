@@ -15,7 +15,7 @@ class SoundManager {
   private init () {
     sounds = Dictionary()
     do {
-      try AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryPlayback)
+      try AVAudioSession.sharedInstance().setCategory(AVAudioSession.Category(rawValue: convertFromAVAudioSessionCategory(AVAudioSession.Category.playback)))
     } catch let error as NSError {
       print("\(error.localizedDescription)")
     }
@@ -33,4 +33,9 @@ class SoundManager {
     }
     soundManager.sounds[sound.rawValue]?.play()
   }
+}
+
+// Helper function inserted by Swift 4.2 migrator.
+fileprivate func convertFromAVAudioSessionCategory(_ input: AVAudioSession.Category) -> String {
+	return input.rawValue
 }

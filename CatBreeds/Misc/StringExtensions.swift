@@ -18,14 +18,14 @@ extension String {
 
   func coloredString(color: UIColor) -> NSAttributedString {
     let attributedString = NSMutableAttributedString(string: self)
-    attributedString.addAttribute(NSAttributedStringKey.foregroundColor, value: color, range: NSMakeRange(0, count))
+    attributedString.addAttribute(NSAttributedString.Key.foregroundColor, value: color, range: NSMakeRange(0, count))
     return attributedString
   }
   
   var infoString: NSAttributedString {
     let infoString = NSMutableAttributedString(string: self)
-    infoString.addAttributes([NSAttributedStringKey.foregroundColor: Colors.white, NSAttributedStringKey.font: Fonts.body], range: NSMakeRange(0, infoString.length))
-    var attributesAndRanges: [(NSAttributedStringKey, Any, NSRange)] = []
+    infoString.addAttributes([NSAttributedString.Key.foregroundColor: Colors.white, NSAttributedString.Key.font: Fonts.body], range: NSMakeRange(0, infoString.length))
+    var attributesAndRanges: [(NSAttributedString.Key, Any, NSRange)] = []
     let centeredStyle = NSMutableParagraphStyle()
     centeredStyle.alignment = .center
     var inHeading = false
@@ -37,9 +37,9 @@ extension String {
     for char in self {
       if char == "*" {
         if inHeading {
-          attributesAndRanges.append((NSAttributedStringKey.paragraphStyle, centeredStyle, NSMakeRange(startIndex, currentIndex - startIndex)))
-          attributesAndRanges.append((NSAttributedStringKey.font, Fonts.heading, NSMakeRange(startIndex, currentIndex - startIndex)))
-          attributesAndRanges.append((NSAttributedStringKey.foregroundColor, Colors.reddish, NSMakeRange(startIndex, currentIndex - startIndex)))
+          attributesAndRanges.append((NSAttributedString.Key.paragraphStyle, centeredStyle, NSMakeRange(startIndex, currentIndex - startIndex)))
+          attributesAndRanges.append((NSAttributedString.Key.font, Fonts.heading, NSMakeRange(startIndex, currentIndex - startIndex)))
+          attributesAndRanges.append((NSAttributedString.Key.foregroundColor, Colors.reddish, NSMakeRange(startIndex, currentIndex - startIndex)))
           inHeading = false
         }
         else {
@@ -50,9 +50,9 @@ extension String {
       
       if char == "^" {
         if inSubheading {
-          attributesAndRanges.append((NSAttributedStringKey.paragraphStyle, centeredStyle, NSMakeRange(startIndex, currentIndex - startIndex)))
-          attributesAndRanges.append((NSAttributedStringKey.font, Fonts.subheading, NSMakeRange(startIndex, currentIndex - startIndex)))
-          attributesAndRanges.append((NSAttributedStringKey.foregroundColor, Colors.reddish, NSMakeRange(startIndex, currentIndex - startIndex)))
+          attributesAndRanges.append((NSAttributedString.Key.paragraphStyle, centeredStyle, NSMakeRange(startIndex, currentIndex - startIndex)))
+          attributesAndRanges.append((NSAttributedString.Key.font, Fonts.subheading, NSMakeRange(startIndex, currentIndex - startIndex)))
+          attributesAndRanges.append((NSAttributedString.Key.foregroundColor, Colors.reddish, NSMakeRange(startIndex, currentIndex - startIndex)))
           inSubheading = false
         }
         else {
@@ -71,7 +71,7 @@ extension String {
             guard let encodedString = subString.addingPercentEncoding(withAllowedCharacters: .urlHostAllowed) else { fatalError("Could not URL encode substring.") }
             subString = encodedString
           }
-          attributesAndRanges.append((NSAttributedStringKey.link, subString, nsRange))
+          attributesAndRanges.append((NSAttributedString.Key.link, subString, nsRange))
           inLink = false
         }
         else {
